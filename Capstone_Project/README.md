@@ -63,7 +63,8 @@ Using the four datasets, a star schema is created for optimized for queries on i
     -   _travel_code_, _description
 
 **ERD Diagram**:
-    <img src="https://udacityawsbucket01.s3.us-west-1.amazonaws.com/dbdiagram.PNG" alt="ERD Diagram" width="800"/>
+    <img 
+src="https://udacityawsbucket01.s3.us-west-1.amazonaws.com/dbdiagram.PNG" alt="ERD Diagram" width="800"/>
 
 
 ## ETL Process
