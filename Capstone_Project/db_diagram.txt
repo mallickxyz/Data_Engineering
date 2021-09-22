@@ -1,0 +1,84 @@
+https://app.quickdatabasediagrams.com/#/
+
+
+-----------------------
+
+fact_immigration
+-
+immigrant_id PK
+state_code
+origin_country_code
+residence_country_code
+port_id
+arrival_date
+departure_date
+age
+visa_code
+travel_mode FK >- dim_travelmode.travel_mode
+count
+fileadd_date
+visapost
+arrival_flag
+departure_flag
+match_flag
+birthyear
+admission_date
+gender
+airline
+admission_no
+flight_no
+visatype
+
+dim_visa
+-
+visa_code PK FK >- fact_immigration.visa_code
+visa_description
+
+dim_country
+-
+country_code
+country_name
+alpha2_code
+alpha3_code
+
+dim_travelmode
+-
+travel_mode PK
+description
+
+
+dim_time
+-
+arrival_date PK FK >- fact_immigration.arrival_date
+year
+month
+day
+dayofweek
+weekofyear
+
+
+dim_temperature
+-
+date PK
+city PK FK >- dim_city.city
+avg_temperature
+avg_temperature_uncertainty
+country FK >- dim_country.country_name
+latitude
+longitude
+
+dim_city
+-
+city PK
+state
+median_age
+male_population
+female_population
+total_population
+veteran_population
+foreigner_born
+avg_household_size
+state_code FK >- fact_immigration.state_code
+race
+count
+---------------------------------------------------------------------------
