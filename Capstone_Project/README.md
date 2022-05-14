@@ -34,7 +34,7 @@ In this project, we will work around Spark and data lakes to build an ETL pipeli
 
 
 ## Database design
-#### Schema for Song Play Analysis
+#### Schema for Immigrant Data Analysis
 
 Using the four datasets, a star schema is created for optimized for queries on immigrant data analysis. This includes the following tables. `dim_visa` and `dim_travelmode` are two ULT dimension tables which are not coming from any dataset but we manually building for data enhancements.
 
